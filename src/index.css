@@ -1,11 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   /* Convert each hex value to rgb */
   --text-primary: 28, 28, 28;
-  --accent-primary: 61, 90, 128;
-  --accent-secondary: 255, 209, 102;
-  --accent-tertiary: 238, 108, 77;
-  --background-primary: 238, 238, 238;
-  --background-secondary: 41, 50, 65;
+  --text-secondary: 238, 238, 238;
+
+  --color-primary: 61, 90, 128;
+  --color-secondary: 255, 209, 102;
+  --color-tertiary: 238, 108, 77;
+
+  --black-primary: 9, 11, 10;
+
+  --background-primary: 29, 29, 31;
+  --background-secondary: 20, 20, 20;
+  --background-tertiary: 238, 238, 238;
 }
 
 html,
@@ -20,5 +30,5 @@ body {
 
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-  min-height: 100vh;
+  min-height: 200vh;
 }
