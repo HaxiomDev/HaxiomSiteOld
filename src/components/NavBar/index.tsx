@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import NavLinks from "../NavLinks";
 
 import "./navbar.css";
 
@@ -15,7 +16,6 @@ export default function NavBar() {
     // Set the navbar to be visible if:
     // 1. The user scrolled down more than 70px
     // 2. The user scrolled up
-    console.log(prevScrollPos, currentScrollPos);
     setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
 
     // Set state to the new scroll position
@@ -30,14 +30,29 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos, visible, handleScroll]);
 
+  const links = [
+    {
+      name: "Home",
+      ref: useRef()
+    },
+    {
+      name: "About",
+      ref: useRef()
+    },
+    {
+      name: "Join",
+      ref: useRef()
+    }
+  ];
+
   return (
     <div className="navbar-wrapper">
       <div className="navbar" style={{ top: visible ? "10px" : "-60px" }}>
-        <a href="/" className="navbar-title">
+        <a href="/" className="navbar-title scale-on-hover">
           Haxiom
         </a>
 
-        <div className="navbar-links"></div>
+        <NavLinks lastSelected="" links={links} />
       </div>
     </div>
   );
