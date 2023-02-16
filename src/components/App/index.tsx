@@ -1,4 +1,4 @@
-import Hero from "../Hero";
+import IntroSection from "../IntroSection";
 import NavBar from "../NavBar";
 import "./app.css";
 
@@ -7,7 +7,7 @@ export default function App() {
     <div className="app">
       <NavBar />
 
-      <Hero />
+      <IntroSection />
     </div>
   );
 }
