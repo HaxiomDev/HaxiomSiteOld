@@ -16,6 +16,8 @@
   --background-primary: 29, 29, 31;
   --background-secondary: 20, 20, 20;
   --background-tertiary: 238, 238, 238;
+
+  --animation-function: cubic-bezier(.15, 1.09, .98, .99);
 }
 
 html,

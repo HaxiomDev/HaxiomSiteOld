@@ -1,3 +1,4 @@
+import { useInView } from "react-intersection-observer";
 import TypewriterEffect from "../TypewriterEffect";
 import "./aboutussection.css";
 
@@ -11,8 +12,15 @@ export default function AboutUsSection() {
     "Geometry"
   ];
 
+  const { ref, inView } = useInView({
+    threshold: 0
+  });
+
   return (
-    <div className="about-us">
+    <div
+      className={`about-us ${inView ? "fade-from-left" : "hidden"}`}
+      ref={ref}
+    >
       <h1 className="learn-title">
         Learn <TypewriterEffect words={classesOffered} />
         <br />
