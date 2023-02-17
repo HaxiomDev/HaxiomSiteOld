@@ -21,7 +21,7 @@ export default function IntroSection() {
         <br /> Dev
       </h1>
       <p className="page-description">
-        A tutoring service help you gain a{" "}
+        A tutoring service to help you gain a{" "}
         <span className="special-highlight">passion for learning</span>
       </p>
     </div>
