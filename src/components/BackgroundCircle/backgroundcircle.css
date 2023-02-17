@@ -1,0 +1,43 @@
+.blob {
+    background: linear-gradient(to right,
+            rgb(var(--color-primary)),
+            rgb(var(--color-secondary)),
+            rgb(var(--color-tertiary)));
+
+    height: 500px;
+    aspect-ratio: 1 / 1;
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    translate: -50% -50%;
+    border-radius: 50%;
+
+    animation: rotate 10s infinite;
+}
+
+.blur {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    z-index: 2;
+
+    backdrop-filter: blur(150px);
+}
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    50% {
+        scale: 1 1.5;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
