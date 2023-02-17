@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import NavBarTitle from "../NavBarTitle";
 import NavLinks from "../NavLinks";
 
 import "./navbar.css";
@@ -48,10 +49,7 @@ export default function NavBar() {
   return (
     <div className="navbar-wrapper">
       <div className="navbar" style={{ top: visible ? "10px" : "-60px" }}>
-        <a href="/" className="navbar-title scale-on-hover">
-          Haxiom
-        </a>
-
+        <NavBarTitle />
         <NavLinks lastSelected="" links={links} />
       </div>
     </div>
