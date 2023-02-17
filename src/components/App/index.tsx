@@ -1,3 +1,4 @@
+import AboutUsSection from "../AboutUsSection";
 import BackgroundCircle from "../BackgroundCircle";
 import IntroSection from "../IntroSection";
 import NavBar from "../NavBar";
@@ -11,6 +12,7 @@ export default function App() {
 
       <div className="content">
         <IntroSection />
+        <AboutUsSection />
       </div>
     </div>
   );
