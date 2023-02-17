@@ -14,7 +14,7 @@ export default function TypewriterEffect(props: Props) {
     let wordIndex = 0;
     let goingUp = true;
 
-    let word = props.words[currentWordIdx % props.words.length];
+    let word = props.words[currentWordIdx];
 
     intervalId.current = setInterval(() => {
       if (goingUp) {
@@ -26,13 +26,19 @@ export default function TypewriterEffect(props: Props) {
         setWordBuffer(word.substring(0, wordIndex));
       } else {
         if (wordIndex-- < 0) {
-          setCurrentWordIdx(Math.floor(Math.random() * props.words.length));
+          let randomIdx = Math.floor(Math.random() * props.words.length);
+
+          while (randomIdx === currentWordIdx) {
+            randomIdx = Math.floor(Math.random() * props.words.length);
+          }
+
+          setCurrentWordIdx(randomIdx);
           clearInterval(intervalId.current);
         }
 
         setWordBuffer(word.substring(0, wordIndex));
       }
-    }, 200);
+    }, 100);
 
     return () => {
       clearInterval(intervalId.current);
