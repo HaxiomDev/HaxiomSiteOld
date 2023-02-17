@@ -26,7 +26,7 @@ export default function TypewriterEffect(props: Props) {
         setWordBuffer(word.substring(0, wordIndex));
       } else {
         if (wordIndex-- < 0) {
-          setCurrentWordIdx(currentWordIdx + 1);
+          setCurrentWordIdx(Math.floor(Math.random() * props.words.length));
           clearInterval(intervalId.current);
         }
 
