@@ -24,6 +24,13 @@
     background-image: url(../../assets/front-page-bg.png);
 }
 
+.content {
+    position: relative;
+    z-index: 3;
+
+    color: rgb(var(--text-secondary))
+}
+
 /* All the animations */
 .scale-on-hover {
     transition: transform 0.2s ease-in-out;

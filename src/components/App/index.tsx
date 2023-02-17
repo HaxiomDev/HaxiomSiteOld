@@ -9,7 +9,9 @@ export default function App() {
       <NavBar />
       <BackgroundCircle />
 
-      <IntroSection />
+      <div className="content">
+        <IntroSection />
+      </div>
     </div>
   );
 }
