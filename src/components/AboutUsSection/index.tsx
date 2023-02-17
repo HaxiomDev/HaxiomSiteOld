@@ -28,7 +28,7 @@ export default function AboutUsSection() {
       </h1>
       <p className="learn-description">
         Learning should always be fun, not a chore which you hate. Stop wasting
-        your time trying to cramming for tests and{" "}
+        your time trying to cram for tests and{" "}
         <span className="special-highlight">
           start learning the material in a way that sticks.
         </span>
