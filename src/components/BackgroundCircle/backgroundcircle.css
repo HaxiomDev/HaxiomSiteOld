@@ -4,7 +4,7 @@
             rgb(var(--color-secondary)),
             rgb(var(--color-tertiary)));
 
-    height: 60vh;
+    height: 400px;
     aspect-ratio: 1 / 1;
 
     position: absolute;
@@ -25,7 +25,7 @@
     position: absolute;
     z-index: 2;
 
-    backdrop-filter: blur(200px);
+    backdrop-filter: blur(75px);
 }
 
 @keyframes rotate {
