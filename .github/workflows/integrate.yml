@@ -2,8 +2,8 @@ name: Node Build
 
 on:
   push:
-    tags:
-      - "*"
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   build:
