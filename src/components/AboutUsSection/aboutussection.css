@@ -4,6 +4,11 @@
 
     margin: 0 auto;
     padding: 0 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    column-gap: 30px;
 }
 
 .learn-title {
