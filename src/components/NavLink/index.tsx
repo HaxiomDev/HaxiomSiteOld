@@ -7,20 +7,17 @@ type NavLinkProps = {
   // The last page the user clicked
   lastSelected: string | null;
 
-  // The ref to the page to scroll to on click
-  ref: React.RefObject<HTMLDivElement>;
+  // What to do when the link is clicked
+  onClick: () => void;
 };
 
 export default function NavLink(props: NavLinkProps) {
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-
-    props.ref.current?.scrollIntoView();
-  };
-
   return (
     <a
-      onClick={handleClick}
+      onClick={(e) => {
+        e.preventDefault();
+        props.onClick();
+      }}
       href="#"
       className={`navlink ${
         props.lastSelected === props.name
