@@ -9,6 +9,9 @@ type NavLinkProps = {
 
   // What to do when the link is clicked
   onClick: () => void;
+
+  // Function to set the last page the user clicked
+  setLastSelected: (name: string) => void;
 };
 
 export default function NavLink(props: NavLinkProps) {
@@ -16,6 +19,8 @@ export default function NavLink(props: NavLinkProps) {
     <a
       onClick={(e) => {
         e.preventDefault();
+        props.setLastSelected(props.name);
+
         props.onClick();
       }}
       href="#"

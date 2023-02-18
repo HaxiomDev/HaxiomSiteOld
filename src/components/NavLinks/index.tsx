@@ -1,10 +1,8 @@
+import { useState } from "react";
 import NavLink from "../NavLink";
 import "./navlinks.css";
 
 type NavLinksProps = {
-  // The last page the user clicked
-  lastSelected: string | null;
-
   // links to display
   links: {
     name: string;
@@ -13,6 +11,8 @@ type NavLinksProps = {
 };
 
 export default function NavLinks(props: NavLinksProps) {
+  const [lastSelected, setLastSelected] = useState("");
+
   return (
     <div className="nav-links">
       {props.links.map((link, key) => (
@@ -20,7 +20,8 @@ export default function NavLinks(props: NavLinksProps) {
           key={key}
           name={link.name}
           onClick={link.onClick}
-          lastSelected={props.lastSelected}
+          lastSelected={lastSelected}
+          setLastSelected={setLastSelected}
         />
       ))}
     </div>
