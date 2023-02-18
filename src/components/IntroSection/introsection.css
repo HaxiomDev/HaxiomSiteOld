@@ -36,12 +36,3 @@
     font-size: 2rem;
     font-weight: 600;
 }
-
-.special-highlight {
-    font-weight: 500;
-    color: transparent;
-    background: linear-gradient(to right, #38bdf8, #c084fc);
-
-    background-clip: text;
-    -webkit-background-clip: text;
-}
