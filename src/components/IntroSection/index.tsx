@@ -18,8 +18,7 @@ export default function IntroSection() {
     >
       <h1 className="page-title">Haxiom</h1>
       <p className="page-description">
-        A {""} tutoring service to help you gain a{" "}
-        <span className = "special-highlight">free</span>
+        A {<span className = "special-highlight">free</span>} tutoring service to help you gain a{" "}
         <span className="special-highlight">passion for learning</span>
       </p>
     </div>
