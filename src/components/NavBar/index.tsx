@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import NavBarTitle from "../NavBarTitle";
 import NavLinks from "../NavLinks";
 
@@ -40,7 +40,7 @@ export default function NavBar(props: NavBarProps) {
 
   return (
     <div className="navbar-wrapper">
-      <div className="navbar" style={{ top: visible ? "10px" : "-60px" }}>
+      <div className="navbar" style={{ top: visible ? "10px" : "-50%" }}>
         <NavBarTitle />
         <NavLinks lastSelected="" links={props.links} />
       </div>

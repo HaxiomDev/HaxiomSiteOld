@@ -27,6 +27,6 @@
     position: fixed;
     top: 10px;
 
-    transition: top 0.5s;
+    transition: top 0.75s;
     z-index: 100;
 }
