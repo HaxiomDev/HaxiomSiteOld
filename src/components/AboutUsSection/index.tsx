@@ -22,10 +22,7 @@ export default function AboutUsSection() {
       ref={ref}
     >
       <h1 className="learn-title">
-        Learn{" "}
-        <span className="special-highlight">
-          <TypewriterEffect words={classesOffered} />
-        </span>
+        Learn <span className = "special-highlight"><TypewriterEffect words={classesOffered}/></span>
         <br />
         <span className="learn-special-background">Effectively.</span>
       </h1>
