@@ -4,7 +4,14 @@ import NavLinks from "../NavLinks";
 
 import "./navbar.css";
 
-export default function NavBar() {
+type NavBarProps = {
+  links: {
+    name: string;
+    onClick: () => void;
+  }[];
+};
+
+export default function NavBar(props: NavBarProps) {
   // Add state to keep track of whether the user scrolled more than
   // 50px, and if so, hide the navbar
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -31,26 +38,11 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos, visible, handleScroll]);
 
-  const links = [
-    {
-      name: "Home",
-      ref: useRef()
-    },
-    {
-      name: "About",
-      ref: useRef()
-    },
-    {
-      name: "Join",
-      ref: useRef()
-    }
-  ];
-
   return (
     <div className="navbar-wrapper">
       <div className="navbar" style={{ top: visible ? "10px" : "-60px" }}>
         <NavBarTitle />
-        <NavLinks lastSelected="" links={links} />
+        <NavLinks lastSelected="" links={props.links} />
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ type NavLinksProps = {
   // links to display
   links: {
     name: string;
-    ref: any | React.RefObject<HTMLDivElement>;
+    onClick: () => void;
   }[];
 };
 
@@ -19,7 +19,7 @@ export default function NavLinks(props: NavLinksProps) {
         <NavLink
           key={key}
           name={link.name}
-          ref={link.ref}
+          onClick={link.onClick}
           lastSelected={props.lastSelected}
         />
       ))}

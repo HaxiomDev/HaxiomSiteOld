@@ -1,7 +1,3 @@
-@font-face {
-    font-family: 'Nunito';
-    src: url(/fonts/Nunito-Medium.woff2);
-}
 .intro-section {
     width: 100%;
     height: 100vh;
@@ -20,8 +16,13 @@
     font-weight: 300;
     background-image: linear-gradient(225deg, #5D79B5, #63A7A6, #8ACF87, #F5BC71);
     filter: drop-shadow(0 20px 30px #28d8ff33);
-    color: black;
+
+    color: transparent;
     -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+    box-decoration-break: clone;
+
     -webkit-background-clip: text;
     -webkit-box-decoration-break: clone;
 
@@ -34,13 +35,4 @@
 .page-description {
     font-size: 2rem;
     font-weight: 600;
-}
-
-.special-highlight {
-    font-weight: 500;
-    color: transparent;
-    background: linear-gradient(to right, #38bdf8, #c084fc);
-
-    background-clip: text;
-    -webkit-background-clip: text;
 }

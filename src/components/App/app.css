@@ -31,6 +31,15 @@
     color: rgb(var(--text-secondary))
 }
 
+.special-highlight {
+    font-weight: 500;
+    color: transparent;
+    background: linear-gradient(to right, #38bdf8, #c084fc);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
 /* All the animations */
 .scale-on-hover {
     transition: transform 0.2s ease-in-out;
