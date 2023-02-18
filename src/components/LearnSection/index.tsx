@@ -4,7 +4,7 @@ import "./learnsection.css";
 
 export default function LearnSection() {
   const { ref, inView } = useInView({
-    threshold: 0
+    threshold: 0.25
   });
 
   const classesOffered = [
