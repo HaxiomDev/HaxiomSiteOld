@@ -16,10 +16,7 @@ export default function IntroSection() {
         transition: "opacity 1s ease-in-out"
       }}
     >
-      <h1 className="page-title">
-        Haxiom
-        <br /> Dev
-      </h1>
+      <h1 className="page-title">Haxiom</h1>
       <p className="page-description">
         A tutoring service to help you gain a{" "}
         <span className="special-highlight">passion for learning</span>
