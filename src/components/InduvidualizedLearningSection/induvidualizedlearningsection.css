@@ -1,3 +1,7 @@
+.broken{
+    width:500px;
+    word-wrap: break-word;
+}
 .induvidualized-learning-section {
     display: flex;
     align-items: flex-end;
