@@ -49,7 +49,7 @@ export default function InduvidualizedLearningSection() {
           experience for each student. We are able to provide more one-on-one
           time with our students, and provide more time for students to ask
           questions and get help. We also provide our students with abundant and {" "} 
-          <span className="special-highlight">high quality</span>
+          <span className="special-highlight">high quality </span>
           resources to understand.
           </p>
       </div>
