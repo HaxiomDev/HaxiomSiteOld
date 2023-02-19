@@ -17,8 +17,8 @@
 
     bottom: 10%;
     transition: background-color 1s ease-out 100ms;
-    transition: box-shadow .5s ease-out 50ms;
-    transition: color .5s ease-out 50ms;
+    transition: box-shadow 1s ease-out 100ms;
+    transition: color 1s ease-out 100ms;
 
 }
 .join-button:hover {
