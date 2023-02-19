@@ -16,4 +16,8 @@
     position: static;
 
     bottom: 10%;
+
+}
+.join-button:hover {
+    background-color: rgb(var(--text-secondary));
 }
