@@ -50,12 +50,12 @@ export default function InduvidualizedLearningSection() {
           Learning
         </h1>
 
-        <p className="induvidual-description">
+        <p className='induvidual-description'>
           With our small class sizes, we are able to provide a more{" "}
           <span className="special-highlight">personalized</span> learning
           experience for each student. We are able to provide more one-on-one
           time with our students, and provide more time for students to ask
-          questions and get help.
+          questions and get help. 
         </p>
       </div>
     </div>
