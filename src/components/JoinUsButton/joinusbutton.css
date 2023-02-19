@@ -16,12 +16,9 @@
     position: static;
 
     bottom: 10%;
-    transition: background-color 1s ease-out 100ms;
-    transition: box-shadow .5s ease-out 50ms;
-    transition: font-color .5s ease-out 50ms;
-
+    transition: all .3s ease ;
 }
 .join-button:hover {
-    transition: font-color .5s ease-out 50ms;
+        color: black;
         box-shadow: 0 0 100px 0 rgb(14, 162, 230);
     }
