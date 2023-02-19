@@ -1,14 +1,11 @@
 .induvidualized-learning-section {
     display: flex;
-    align-items: flex-end;
 
     margin-top: 100px;
 }
 
 .induvidual-image-container {
     flex: 1;
-
-    height: 100%;
 
     display: flex;
     justify-content: space-evenly;
@@ -17,7 +14,9 @@
 
 .induvidual-image {
     flex: 1;
-    max-width: 200px;
+
+    max-width: 150px;
+    aspect-ratio: 1 / 1;
 
     filter: invert(0.9);
 }
