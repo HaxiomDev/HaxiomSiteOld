@@ -18,7 +18,7 @@ export default function RigorousContentSection() {
         <span
           className="special-background"
           style={{
-            backgroundColor: "rgb(var(--color-primary))"
+            backgroundColor: "rgb(var(--color-secondary))"
           }}
         >
           Rigorous
