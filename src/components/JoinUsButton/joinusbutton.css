@@ -17,7 +17,11 @@
 
     bottom: 10%;
     transition: all .3s ease ;
+    transition: background-color .5s ease;
 }
 .join-button:hover {
         box-shadow: 0 0 50px 0 rgb(14, 162, 230);
+        background-color: whitesmoke;
+        color: black;
     }
+    
