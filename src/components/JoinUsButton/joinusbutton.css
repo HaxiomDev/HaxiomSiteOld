@@ -11,7 +11,7 @@
     cursor: pointer;
     text-decoration: none;
 
-    box-shadow: 0 0 30px 0 rgb(var(--color-secondary));
+    box-shadow: 0 0 30px 0 rgb(linear-gradient(to right, #1b9ed5, #450486));
 
     position: static;
 
@@ -21,5 +21,5 @@
 
 }
 .join-button:hover {
-        box-shadow: 0 0 50px 0 rgb(linear-gradient(to right, #1b9ed5, #450486));
+        box-shadow: 0 0 60px 0 rgb(linear-gradient(to right, #1b9ed5, #450486));
     }
