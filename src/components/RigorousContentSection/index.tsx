@@ -1,11 +1,8 @@
-import "./rigorouscontentsection.css";
-
 import { useInView } from "react-intersection-observer";
 
 export default function RigorousContentSection() {
   const { inView, ref } = useInView({
-    threshold: 0.5,
-    triggerOnce: true
+    threshold: 0.5
   });
 
   return (
