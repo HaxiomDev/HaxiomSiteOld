@@ -11,7 +11,7 @@
     cursor: pointer;
     text-decoration: none;
 
-    box-shadow: 0 0 30px 0 rgb(var(--color-primary));
+    box-shadow: 0 0 15px 0 rgb(var(--color-primary));
 
     position: absolute;
     bottom: clamp(10px, 10%, 20px);
