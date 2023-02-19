@@ -3,7 +3,7 @@
 
     border: none;
     border-radius: 10px;
-    background-color: rgb(var(--text-primary));
+    background-image: rgb(var(--text-primary));
 
     color: rgb(var(--text-secondary));
     font-size: 1.5rem;
@@ -11,17 +11,35 @@
     cursor: pointer;
     text-decoration: none;
 
-    box-shadow: 0 0 30px 0 rgb(14, 162, 230);
+    box-shadow: 0 0 15px 0 rgb(var(--color-primary));
 
-    position: static;
+    position: absolute;
+    bottom: clamp(10px, 10%, 20px);
 
-    bottom: 10%;
-    transition: all .3s ease ;
-    transition: background-color .5s ease;
+    transition: all 2s var(--animation-function);
 }
+
 .join-button:hover {
-        box-shadow: 0 0 50px 0 rgb(14, 162, 230);
-        background-color: whitesmoke;
-        color: black;
+    opacity: 70%;
+
+    animation: spin-change-background-color 1.5s ease-in infinite;
+
+    background: linear-gradient(1deg, #5D79B5, #63A7A6, #8ACF87, #F5BC71);
+
+    background-size: 400% 400%;
+    background-position: 0 0;
+}
+
+@keyframes spin-change-background-color {
+    0% {
+        background-position: 0 0;
     }
-    
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
