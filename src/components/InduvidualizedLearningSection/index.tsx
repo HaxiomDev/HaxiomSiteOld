@@ -43,7 +43,7 @@ export default function InduvidualizedLearningSection() {
           Learning
         </h1>
 
-        <p className={'induvidual-description ${"broken"}'}>
+        <p className='induvidual-description'>
           With our small class sizes, we are able to provide a more{" "}
           <span className="special-highlight">personalized</span> learning
           experience for each student. We are able to provide more one-on-one
