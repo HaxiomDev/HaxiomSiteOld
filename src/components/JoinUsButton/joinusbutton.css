@@ -16,8 +16,9 @@
     position: static;
 
     bottom: 10%;
+    transition: background-color 1s ease-out 100ms
 
 }
 .join-button:hover {
-    background-color: rgb(var(--text-secondary));
-}
+        background-color: rgb(var(--color-secondary));
+    }
