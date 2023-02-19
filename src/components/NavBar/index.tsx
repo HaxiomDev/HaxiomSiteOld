@@ -42,7 +42,7 @@ export default function NavBar(props: NavBarProps) {
     <div className="navbar-wrapper">
       <div className="navbar" style={{ top: visible ? "10px" : "-50%" }}>
         <NavBarTitle />
-        <NavLinks lastSelected="" links={props.links} />
+        <NavLinks links={props.links} />
       </div>
     </div>
   );

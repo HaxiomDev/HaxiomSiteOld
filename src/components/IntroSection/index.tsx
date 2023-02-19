@@ -1,4 +1,5 @@
 import { useInView } from "react-intersection-observer";
+import JoinUsButton from "../JoinUsButton";
 import "./introsection.css";
 
 export default function IntroSection() {
@@ -16,11 +17,15 @@ export default function IntroSection() {
         transition: "opacity 1s ease-in-out"
       }}
     >
-      <h1 className="page-title">Haxiom</h1>
-      <p className="page-description">
-        A tutoring service to help you gain a{" "}
-        <span className="special-highlight">passion for learning</span>
-      </p>
+      <div className="intro-content">
+        <h1 className="page-title">Haxiom</h1>
+        <p className="page-description">
+          A tutoring service to help you gain a{" "}
+          <span className="special-highlight">passion for learning</span>
+        </p>
+      </div>
+
+      <JoinUsButton />
     </div>
   );
 }

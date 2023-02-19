@@ -40,6 +40,17 @@
     -webkit-background-clip: text;
 }
 
+.special-background {
+    display: inline-block;
+
+    background-color: var(--background-color);
+
+    padding: 0 5px;
+    margin: 10px 0;
+
+    border-radius: 10px;
+}
+
 /* All the animations */
 .scale-on-hover {
     transition: transform 0.2s ease-in-out;

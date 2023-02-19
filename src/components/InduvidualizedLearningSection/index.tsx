@@ -39,7 +39,14 @@ export default function InduvidualizedLearningSection() {
         }`}
       >
         <h1 className="learn-title">
-          <span className="induvidual-special-background">Induvidualized</span>{" "}
+          <span
+            className="special-background"
+            style={{
+              backgroundColor: "rgb(var(--color-tertiary))"
+            }}
+          >
+            Induvidualized
+          </span>{" "}
           Learning
         </h1>
 
@@ -48,10 +55,11 @@ export default function InduvidualizedLearningSection() {
           <span className="special-highlight">personalized</span> learning
           experience for each student. We are able to provide more one-on-one
           time with our students, and provide more time for students to ask
-          questions and get help. We also provide our students with abundant and {" "} 
-          <span className="special-highlight">high quality </span>
-          resources to understand.
-          </p>
+          questions and get help. We also provide our students with abundant
+          resources to understand{" "}
+          <span className="special-highlight">high quality</span>videos and
+          homework.
+        </p>
       </div>
     </div>
   );

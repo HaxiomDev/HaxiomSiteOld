@@ -27,7 +27,14 @@ export default function LearnSection() {
           <TypewriterEffect words={classesOffered} />
         </span>
         <br />
-        <span className="learn-special-background">Effectively.</span>
+        <span
+          className="special-background"
+          style={{
+            backgroundColor: "rgb(var(--color-primary))"
+          }}
+        >
+          Effectively.
+        </span>
       </h1>
 
       <p className="learn-description">
