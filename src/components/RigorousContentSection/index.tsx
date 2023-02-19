@@ -25,9 +25,11 @@ export default function RigorousContentSection() {
 
       <p className="learn-description">
         With our rigorous content, we focus on teaching students the art of
-        learning and problem solving. We teach students how to think critically
+        learning and problem solving. We teach students how to think {" "}
+        <span className="special-highlight">critically</span>
         and solve problems in a way that sticks. We also provide our students
-        with abundant resources to understand high quality videos and homework.
+        with abundant resources to understand {" "}
+        <span className="special-highlight">high-quality</span> videos and homework.
       </p>
     </div>
   );
