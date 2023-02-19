@@ -11,7 +11,7 @@
     cursor: pointer;
     text-decoration: none;
 
-    box-shadow: 0 0 30px 0 rgb(230, 180, 14);
+    box-shadow: 0 0 30px 0 rgb(9, 131, 197);
 
     position: static;
 
@@ -23,7 +23,4 @@
 }
 .join-button:hover {
         box-shadow: 0 0 100px 0 rgb(9, 131, 197);
-        color: rgb(0,0,0,0);
-        background-color: rgb(255,255,255);
-
     }
