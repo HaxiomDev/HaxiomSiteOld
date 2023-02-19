@@ -3,9 +3,9 @@
 
     border: none;
     border-radius: 10px;
-    background-color: rgb(var(--text-secondary));
+    background-color: rgb(var(--text-primary));
 
-    color: black;
+    color: rgb(var(--text-secondary));
     font-size: 1.5rem;
 
     cursor: pointer;
