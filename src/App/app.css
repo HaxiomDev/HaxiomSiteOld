@@ -19,9 +19,9 @@
 
     min-height: 100%;
 
-    opacity: 0.4;
+    opacity: 0.7;
 
-    background-image: url(../../assets/front-page-bg.png);
+    background-image: url(../assets/front-page-bg.png);
 }
 
 .content {

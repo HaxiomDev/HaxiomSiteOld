@@ -1,9 +1,8 @@
 import { forwardRef, useRef } from "react";
-import AboutUsSection from "../AboutUsSection";
-import BackgroundCircle from "../BackgroundCircle";
-import IntroSection from "../IntroSection";
-import NavBar from "../NavBar";
-import "./app.css";
+import AboutUsSection from "../components/AboutUsSection";
+import BackgroundCircle from "../components/BackgroundCircle";
+import IntroSection from "../components/IntroSection";
+import NavBar from "../components/NavBar";
 
 const IntroSectionWithRef = forwardRef((props, ref: any) => {
   return (
@@ -21,7 +20,7 @@ const AboutUsSectionWithRef = forwardRef((props, ref: any) => {
   );
 });
 
-export default function App() {
+export default function HomeRoute() {
   const homeLinkRef = useRef<HTMLDivElement>(null);
   const aboutLinkRef = useRef<HTMLDivElement>(null);
 
@@ -47,7 +46,7 @@ export default function App() {
   ];
 
   return (
-    <div className="app">
+    <>
       <NavBar links={links} />
       <BackgroundCircle />
 
@@ -55,6 +54,6 @@ export default function App() {
         <IntroSectionWithRef ref={homeLinkRef} />
         <AboutUsSectionWithRef ref={aboutLinkRef} />
       </div>
-    </div>
+    </>
   );
 }
