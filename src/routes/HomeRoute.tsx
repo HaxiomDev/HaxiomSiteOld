@@ -2,6 +2,7 @@ import { useRef } from "react";
 
 import AboutUsSection from "../components/AboutUsSection";
 import BackgroundCircle from "../components/BackgroundCircle";
+import Footer from "../components/Footer";
 import IntroSection from "../components/IntroSection";
 import NavBar from "../components/NavBar";
 
@@ -44,6 +45,8 @@ export default function HomeRoute() {
           <AboutUsSection />
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }

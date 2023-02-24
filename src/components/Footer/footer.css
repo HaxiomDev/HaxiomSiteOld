@@ -1,0 +1,13 @@
+.footer {
+    width: 100%;
+
+    margin-top: 100px;
+    padding: 20px 0;
+
+    position: relative;
+
+    color: rgb(var(--text-secondary), 0.8);
+    text-align: center;
+
+    z-index: 3;
+}
