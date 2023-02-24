@@ -1,24 +1,9 @@
-import { forwardRef, useRef } from "react";
+import { useRef } from "react";
+
 import AboutUsSection from "../components/AboutUsSection";
 import BackgroundCircle from "../components/BackgroundCircle";
 import IntroSection from "../components/IntroSection";
 import NavBar from "../components/NavBar";
-
-const IntroSectionWithRef = forwardRef((props, ref: any) => {
-  return (
-    <div ref={ref}>
-      <IntroSection {...props} />
-    </div>
-  );
-});
-
-const AboutUsSectionWithRef = forwardRef((props, ref: any) => {
-  return (
-    <div ref={ref}>
-      <AboutUsSection {...props} />
-    </div>
-  );
-});
 
 export default function HomeRoute() {
   const homeLinkRef = useRef<HTMLDivElement>(null);
@@ -51,8 +36,13 @@ export default function HomeRoute() {
       <BackgroundCircle />
 
       <div className="content">
-        <IntroSectionWithRef ref={homeLinkRef} />
-        <AboutUsSectionWithRef ref={aboutLinkRef} />
+        <div ref={homeLinkRef}>
+          <IntroSection />
+        </div>
+
+        <div ref={aboutLinkRef}>
+          <AboutUsSection />
+        </div>
       </div>
     </>
   );
