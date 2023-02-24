@@ -1,5 +1,5 @@
 import InduvidualizedLearningSection from "../InduvidualizedLearningSection";
-import LearnSection from "../LearnSection";
+import { LearnSection } from "../LearnSection";
 import RigorousContentSection from "../RigorousContentSection";
 import "./aboutussection.css";
 

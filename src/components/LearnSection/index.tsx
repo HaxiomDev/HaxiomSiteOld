@@ -2,19 +2,12 @@ import { useInView } from "react-intersection-observer";
 import TypewriterEffect from "../TypewriterEffect";
 import "./learnsection.css";
 
-export default function LearnSection() {
+export function LearnSection() {
   const { ref, inView } = useInView({
-    threshold: 0.25
+    threshold: 0
   });
 
-  const classesOffered = [
-    "Python",
-    "Java",
-    "C++",
-    "7th Grade Math",
-    "Algebra",
-    "Geometry"
-  ];
+  const classesOffered = ["Python", "C++", "Algebra", "Geometry", "WebDev"];
 
   return (
     <div
