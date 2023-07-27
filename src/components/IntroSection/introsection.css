@@ -16,9 +16,13 @@
     position: relative;
 }
 
+.page-description{
+    text-align: center;
+}
+
 .page-title {
     font-family: 'Nunito';
-    font-size: 10rem;
+    font-size: 5rem;
     font-weight: 300;
     background-image: linear-gradient(225deg, #5D79B5, #63A7A6, #8ACF87, #F5BC71);
     filter: drop-shadow(0 20px 30px #28d8ff33);

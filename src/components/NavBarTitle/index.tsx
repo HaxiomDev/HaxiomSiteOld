@@ -5,7 +5,7 @@ export default function NavBarTitle() {
   const intervalId = useRef<number>();
   const ref = useRef<HTMLAnchorElement>(null);
 
-  const text = "Haxiom";
+  const text = "AEP";
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
   const handleMouseEnter = () => {
